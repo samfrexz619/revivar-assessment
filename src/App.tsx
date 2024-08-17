@@ -8,7 +8,7 @@ import { SelectedImage } from "./types/imageTypes";
 
 function App() {
 
-  const { randomImgs, isLoading } = useGetImages()
+  const { randomImgs } = useGetImages()
 
   const [selectedImg, setSelectedImg] = useState<SelectedImage | null>(null)
   const [showModal, setShowModal] = useState(false)

@@ -1,5 +1,5 @@
-import { ImageType } from '@/types/imageTypes';
 import { useEffect, useState } from 'react';
+import { ImageType } from '@/types/imageTypes';
 
 
 const { VITE_API_URL: API_URL, VITE_UNSPLASH_KEY: KEY } = import.meta.env

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
 import { SelectedImage } from '@/types/imageTypes';
 
+
 interface ModalProps {
   selectedImg: SelectedImage;
   closeModal: () => void;

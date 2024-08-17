@@ -1,5 +1,5 @@
-import { ImageType, SelectedImage } from '@/types/imageTypes';
 import React from 'react';
+import { ImageType, SelectedImage } from '@/types/imageTypes';
 
 interface ImageItemProps {
   image: ImageType;
