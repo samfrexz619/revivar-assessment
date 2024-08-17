@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# Revivar Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an assessment project that allows users to design a personalized “thank you” card using images from Unsplash’s random image generator API. The site present the user with four randomly selected images to choose from. Once the user selects an image and enters their name, the website generates a custom card by overlaying the chosen image with the user’s name at the bottom and “Thank You” text at the top.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Basic structure for a React + TypeScript + Vite project
+- Includes two official Vite plugins:
+  - `@vitejs/plugin-react` (using Babel for Fast Refresh)
+  - `@vitejs/plugin-react-swc` (using SWC for Fast Refresh)
+- Guidance on expanding the ESLint configuration for production applications, including type-aware lint rules
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**
+- **TypeScript**
+- **Vite**
+- **ESLint**
 
-- Configure the top-level `parserOptions` property like this:
+## Styling
+- [Tailwind CSS](https://tailwindcss.com/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To start the project in development mode, follow these steps:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Run `npm install` to install node dependencies
+2. Run `npm run dev` to start the development server
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
