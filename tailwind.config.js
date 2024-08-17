@@ -12,7 +12,10 @@ export default {
       },
       fontFamily: {
         pry: 'var(--JetBrainsMono)',
-      }
+      },
+      aspectRatio: {
+        '4/5': '4 / 5',
+      },
     },
   },
   plugins: [],
