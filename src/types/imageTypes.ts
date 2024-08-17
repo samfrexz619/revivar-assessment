@@ -1,4 +1,4 @@
-type Urls = {
+export type Urls = {
   raw: string;
   regular: string;
   full: string;
@@ -12,5 +12,10 @@ export interface ImageType {
   alt_description: string;
   description: string;
   urls: Urls
+  id: string;
+}
+
+export interface SelectedImage {
+  urls: Urls;
   id: string;
 }

@@ -14,6 +14,7 @@ export const useGetImages = () => {
     try {
       const res = await fetch(`${API_URL}/photos/random/?count=4`, {
         headers: {
+          'method': 'GET',
           'Authorization': `Client-ID ${KEY}`
         }
       })
