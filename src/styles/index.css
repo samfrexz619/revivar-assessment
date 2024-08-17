@@ -1,0 +1,10 @@
+@import url('./fontStyles.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-pry;
+  }
+}

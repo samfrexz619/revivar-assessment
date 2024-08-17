@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black: '#131619',
+        green: '#24AE7C',
+      },
+      fontFamily: {
+        pry: 'var(--JetBrainsMono)',
+      }
+    },
   },
   plugins: [],
 }
