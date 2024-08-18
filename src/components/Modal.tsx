@@ -13,7 +13,7 @@ const Modal: React.FC<ModalProps> = ({ selectedImg, closeModal }) => {
 
   const [userName, setUserName] = useState('')
   const [user, setUser] = useState('')
-  const cardRef = useRef<HTMLImageElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -76,9 +76,8 @@ const Modal: React.FC<ModalProps> = ({ selectedImg, closeModal }) => {
             </div>
           </form>
 
-          <div className='relative mt-5 w-[92%] lg:w-full mx-auto'>
+          <div ref={cardRef} className='relative mt-5 w-[92%] lg:w-full mx-auto'>
             <img
-              ref={cardRef}
               src={selectedImg.urls.regular}
               alt="random image"
               className='h-[400px] w-full rounded-xl object-cover'
