@@ -76,20 +76,20 @@ const Modal: React.FC<ModalProps> = ({ selectedImg, closeModal }) => {
             </div>
           </form>
 
-          <div ref={cardRef} className='relative mt-5 w-[92%] lg:w-full mx-auto'>
+          {user && <div ref={cardRef} className='relative mt-5 w-[92%] lg:w-full mx-auto'>
             <img
               src={selectedImg.urls.regular}
               alt="random image"
               className='h-[400px] w-full rounded-xl object-cover'
             />
-            {user && <div className='absolute bg-black/40 rounded-xl w-full inset-y-0 left-0  text-white p-7'>
+            <div className='absolute bg-black/40 rounded-xl w-full inset-y-0 left-0  text-white p-7'>
               <div className='w-full flex h-full flex-col justify-between items-center text-2xl lg:text-3xl'>
                 <p className='font-semibold'>Thank You</p>
                 <p className='capitalize font-semibold'>{user}</p>
               </div>
-            </div>}
+            </div>
           </div>
-
+          }
           {user &&
             <button className='bg-black px-7 lg:w-[350px] py-2 text-white mt-5 rounded-xl' onClick={handleDownload}>
               Download card
